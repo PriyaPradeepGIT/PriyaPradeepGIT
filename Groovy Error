@@ -1,0 +1,39 @@
+The current character read is 'j' with an int value of 106
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+java.net.SocketException: Socket closed
+^
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	at java.scripting/javax.script.CompiledScript.eval(CompiledScript.java:93) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:230) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.extractor.JSR223PostProcessor.process(JSR223PostProcessor.java:45) ~[ApacheJMeter_components.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.runPostProcessors(JMeterThread.java:973) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:585) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:501) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:268) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: groovy.json.JsonException: Unable to determine the current character, it is not a string, number, array, or object
+
+The current character read is 'j' with an int value of 106
+Unable to determine the current character, it is not a string, number, array, or object
+line number 1
+index number 0
+java.net.SocketException: Socket closed
+^
+	at org.apache.groovy.json.internal.JsonParserCharArray.decodeValueInternal(JsonParserCharArray.java:202) ~[groovy-json-3.0.20.jar:3.0.20]
+	at org.apache.groovy.json.internal.JsonParserCharArray.decodeValue(JsonParserCharArray.java:153) ~[groovy-json-3.0.20.jar:3.0.20]
+	at org.apache.groovy.json.internal.JsonParserCharArray.decodeFromChars(JsonParserCharArray.java:43) ~[groovy-json-3.0.20.jar:3.0.20]
+	at org.apache.groovy.json.internal.JsonParserCharArray.parse(JsonParserCharArray.java:380) ~[groovy-json-3.0.20.jar:3.0.20]
+	at org.apache.groovy.json.internal.BaseJsonParser.parse(BaseJsonParser.java:113) ~[groovy-json-3.0.20.jar:3.0.20]
+	at groovy.json.JsonSlurper.parseText(JsonSlurper.java:204) ~[groovy-json-3.0.20.jar:3.0.20]
+	at groovy.json.JsonSlurper$parseText.call(Unknown Source) ~[?:?]
+	at Script10.run(Script10.groovy:6) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.20.jar:3.0.20]
+	... 9 more
+2025-09-25 14:44:51,150 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - Token Refresh 1-1
+2025-09-25 14:44:51,150 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-09-25 14:44:51,150 INFO o.a.j.s.FileServer: Close: C:/Users/pannaha/PerfTest/RubiDevTest/data-d0-all-encoded-1000-610097-001.csv
+2025-09-25 14:44:51,151 INFO o.a.j.s.FileServer: Close: C:/Users/pannaha/PerfTest/Rubi/data-d0-all-encoded-1000-610097-001.csv
+2025-09-25 14:44:51,151 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
