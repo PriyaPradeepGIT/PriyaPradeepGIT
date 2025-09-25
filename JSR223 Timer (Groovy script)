@@ -1,0 +1,11 @@
+// Target throughput changes every 5 minutes
+long elapsed = ctx.getEngine().getTestStartTime() == 0 ? 0 :
+        (System.currentTimeMillis() - ctx.getEngine().getTestStartTime()) / 1000; // in sec
+
+if (elapsed < 300) {      // First 5 minutes
+    vars.put("throughput", "600");  // 10/sec
+} else if (elapsed < 600) { // Next 5 minutes
+    vars.put("throughput", "1200"); // 20/sec
+} else {                   // Last 5 minutes
+    vars.put("throughput", "1800"); // 30/sec
+}
