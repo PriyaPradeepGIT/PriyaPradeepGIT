@@ -1,0 +1,121 @@
+Perfect — that’s a very common situation 👍
+You’re in your project folder (e.g. `C:\example`) inside IntelliJ’s terminal, but the command `gradle` isn’t recognized.
+Let’s fix that — it just means **Gradle isn’t installed globally**, but we can still **initialize it easily inside IntelliJ** using the Gradle Wrapper.
+
+---
+
+## ⚙️ OPTION 1 — Easiest (use IntelliJ’s built-in Gradle)
+
+You **don’t need to install Gradle globally** at all.
+IntelliJ can use its built-in Gradle to initialize your project.
+
+### ✅ Steps:
+
+1. In IntelliJ IDEA:
+
+   * Go to the top menu → **File → New → Module from Existing Sources**
+   * Choose your **`pom.xml`**
+   * It will open the project as Maven (already done in your case).
+
+2. Now open IntelliJ’s **Terminal** (bottom panel).
+
+3. Instead of typing `gradle ...`, do this:
+
+   * Run Gradle using IntelliJ’s Gradle tool window.
+
+     * Open **View → Tool Windows → Gradle**
+     * If you don’t see the Gradle icon → click the **“+”** symbol there → select **“Link Gradle Project”**
+     * Navigate to your project → select **“build.gradle.kts”** (we’ll create this next).
+
+If you haven’t yet created the Gradle files, skip to **Option 2** below.
+
+---
+
+## ⚙️ OPTION 2 — Install Gradle Wrapper Locally (Recommended)
+
+We’ll install Gradle for **this project only** (no global install needed).
+
+### Step 1: Install Gradle once manually
+
+Since Windows doesn’t come with Gradle preinstalled, do this:
+
+#### 🧩 Option A – Using SDKMAN (if using WSL or Git Bash)
+
+If you use Git Bash or WSL:
+
+```bash
+sdk install gradle
+```
+
+#### 🧩 Option B – Manual (for Windows CMD/PowerShell)
+
+1. Go to 👉 [https://gradle.org/install/](https://gradle.org/install/)
+2. Download the **Binary-only ZIP** (not complete distribution).
+3. Extract it somewhere (e.g. `C:\Gradle\gradle-8.10`)
+4. Add this to your **PATH**:
+
+   * Open Windows search → type **“Edit the system environment variables”**
+   * Click **Environment Variables**
+   * Under *System Variables*, find `Path` → Edit → Add:
+
+     ```
+     C:\Gradle\gradle-8.10\bin
+     ```
+5. Open a **new terminal** (or restart IntelliJ).
+
+Then check:
+
+```bash
+gradle -v
+```
+
+✅ You should now see the Gradle version.
+
+---
+
+### Step 2: Initialize Gradle with Kotlin DSL
+
+Now that Gradle works, in your **project root (where pom.xml is)**, run:
+
+```bash
+gradle init --type pom --dsl kotlin
+```
+
+This creates:
+
+```
+build.gradle.kts
+settings.gradle.kts
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.properties
+```
+
+---
+
+### Step 3: From Now On — Use Wrapper (No Need for Global Gradle)
+
+After running the above, you can now build your project **without relying on global Gradle**:
+
+```bash
+./gradlew build          # (Linux/macOS)
+gradlew.bat build        # (Windows)
+```
+
+💡 These wrapper files ensure anyone cloning your repo can build without installing Gradle manually.
+
+---
+
+## ✅ Quick Summary
+
+| Step | Action                             | Command                                          |
+| ---- | ---------------------------------- | ------------------------------------------------ |
+| 1    | Install Gradle (once)              | [gradle.org/install](https://gradle.org/install) |
+| 2    | Verify installation                | `gradle -v`                                      |
+| 3    | Initialize Kotlin DSL Gradle files | `gradle init --type pom --dsl kotlin`            |
+| 4    | Use Gradle wrapper                 | `gradlew build`                                  |
+| 5    | Import into IntelliJ               | Open → `build.gradle.kts`                        |
+
+---
+
+Would you like me to give you the **exact Gradle installation steps for Windows (with screenshots or full paths)** so you can get `gradle -v` working right away?
