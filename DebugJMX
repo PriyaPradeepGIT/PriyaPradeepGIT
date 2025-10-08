@@ -1,0 +1,25 @@
+2025-10-08 14:03:19,234 INFO o.a.j.g.a.Start: Stopping test
+2025-10-08 14:03:19,250 INFO o.a.j.t.JMeterThread: Stopping: Rubi Dev Test 1-1
+2025-10-08 14:03:19,250 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2025-10-08 14:03:19,250 INFO o.a.j.t.JMeterThread: Thread finished: Rubi Dev Test 1-1
+2025-10-08 14:03:19,251 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-10-08 14:03:19,251 INFO o.a.j.s.FileServer: Close: C:/Users/pannaha/PerfTest/RubiDevTest/data-d0-all-encoded-1000-610097-001.csv
+2025-10-08 14:03:19,252 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-10-08 14:03:57,935 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-10-08 14:03:57,936 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-10-08 14:03:57,941 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-10-08 14:03:57,988 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Rubi Dev Test
+2025-10-08 14:03:57,988 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Rubi Dev Test.
+2025-10-08 14:03:57,988 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-10-08 14:03:57,988 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=5 delayedStart=false
+2025-10-08 14:03:57,990 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-10-08 14:03:57,990 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-10-08 14:03:57,992 INFO o.a.j.t.JMeterThread: Thread started: Rubi Dev Test 1-1
+2025-10-08 14:03:57,992 INFO o.a.j.s.FileServer: Stored: C:/Users/pannaha/PerfTest/RubiDevTest/data-d0-all-encoded-1000-610097-001.csv
+2025-10-08 14:04:18,688 INFO o.a.j.g.a.Start: Stopping test
+2025-10-08 14:04:18,702 INFO o.a.j.t.JMeterThread: Stopping: Rubi Dev Test 1-1
+2025-10-08 14:04:18,702 WARN o.a.j.t.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended.
+2025-10-08 14:04:18,702 INFO o.a.j.t.JMeterThread: Thread finished: Rubi Dev Test 1-1
+2025-10-08 14:04:18,703 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-10-08 14:04:18,703 INFO o.a.j.s.FileServer: Close: C:/Users/pannaha/PerfTest/RubiDevTest/data-d0-all-encoded-1000-610097-001.csv
+2025-10-08 14:04:18,703 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
