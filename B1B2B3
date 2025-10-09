@@ -1,0 +1,50 @@
+Great question, Priya 👏 — you’re referring to **claim transaction types** like **B1, B2, and B3**, which are commonly used in **pharmacy benefit management (PBM)** systems or **healthcare claims** — especially in **NCPDP (National Council for Prescription Drug Programs)** transactions.
+
+Let’s break them down clearly 👇
+
+---
+
+## 💊 Claim Transaction Codes — B1, B2, B3
+
+| Code   | Type                           | Meaning                                                                    | When It’s Used                                                                         |
+| ------ | ------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **B1** | **Claim Billing**              | Used to **submit a new prescription claim** for payment.                   | When a pharmacy first sends a claim for a filled prescription.                         |
+| **B2** | **Claim Reversal**             | Used to **cancel or reverse** a previously submitted claim (usually a B1). | When a prescription was billed in error, or the patient didn’t pick up the medicine.   |
+| **B3** | **Claim Rebill / Replacement** | Used to **resubmit** a corrected claim after a reversal.                   | When a pharmacy fixes an error (like wrong quantity or price) and resubmits the claim. |
+
+---
+
+### 🧠 Example Flow
+
+1. **B1 (Billing):**
+   The pharmacy sends a new claim → “Please pay for this prescription.”
+
+2. **B2 (Reversal):**
+   The pharmacy cancels it → “Oops, that claim was a mistake, please undo it.”
+
+3. **B3 (Rebill):**
+   The pharmacy sends a new, corrected claim → “Here’s the right version — please process this one.”
+
+---
+
+### 🏥 Example in Real Life
+
+Imagine a pharmacy fills a prescription for a patient:
+
+* They send a **B1** claim → to get paid.
+* Later they realize the **wrong dosage** was entered → so they send a **B2** reversal.
+* Then they correct it and send a **B3** claim → for the correct amount.
+
+---
+
+### 🗂️ In short
+
+| Transaction | Description                       |
+| ----------- | --------------------------------- |
+| **B1**      | Original claim (new prescription) |
+| **B2**      | Reversal (cancel the claim)       |
+| **B3**      | Rebill (correct and resubmit)     |
+
+---
+
+Would you like me to show a **simple flow diagram** (B1 → B2 → B3) to make it visually clear how these claims move in a PBM system?
