@@ -1,0 +1,1 @@
+@workspace Explain the architecture of this Spring Boot service in terms of UI state and component flow. Identify where business logic is mixed inside Controllers instead of Service layers, and list the files that violate the Single Responsibility Principle.
